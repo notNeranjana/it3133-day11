@@ -14,7 +14,12 @@ const ContactUs = () => {
   });
 
   const submitForm = () => {
-    console.log(data);
+    if (data.name === "" || data.email === "" || data.message === "") {
+      alert("Please fill all fields");
+      return;
+    }
+
+    navigation.navigate("thanks", { data });
   };
 
   return (
