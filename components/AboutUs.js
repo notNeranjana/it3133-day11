@@ -2,7 +2,7 @@ import { View, StyleSheet, Text, Image } from "react-native";
 import { Button } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
-const About = () => {
+const AboutUs = () => {
   const navigation = useNavigation();
 
   return (
@@ -53,7 +53,7 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;
 
 const styles = StyleSheet.create({
   container: {

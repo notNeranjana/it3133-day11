@@ -7,6 +7,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import Thanks from "./components/Thanks";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -37,6 +38,11 @@ export default function App() {
               name="contact"
               component={ContactUs}
               options={{ title: "Contact Us" }}
+            />
+            <Stack.Screen
+              name="thanks"
+              component={Thanks}
+              options={{ title: "Thank You!" }}
             />
           </Stack.Navigator>
         </NavigationContainer>
